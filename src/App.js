@@ -5,7 +5,6 @@ const App = () => {
   return (
     <div>
       <Main/>
-      <h2 className='text-red-500'>HEllo</h2>
     </div>
   )
 }
