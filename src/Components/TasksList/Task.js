@@ -21,9 +21,6 @@ const Task = ({todos, setTodos}) => {
          }
 
          setTodos([...todos, Editeddata])
-         setTimeout(()=> {
-            alert("Success")
-         })
          setEditModal(false)
     }
   return (
@@ -44,7 +41,7 @@ const Task = ({todos, setTodos}) => {
         <Modal extraClass={editModal === false ? "scale-0" : "scale-1"}>
           <div className='flex justify-center flex-col p-2 gap-2'>
           <form onSubmit={handleOnSubmitEditTask} className='flex items-center justify-center mt-10'>
-          <input value={item.title} name='Editedtask' type="text" placeholder="Add things to do..." className='w-[100%] h-[50px] p-2 text-[20px] shadow-2xl rounded-l-md outline-none'/>
+          <input  name='Editedtask' type="text" placeholder="Add things to do..." className='w-[100%] h-[50px] p-2 text-[20px] shadow-2xl rounded-l-md outline-none'/>
           <Button type={"submit"} icon={"Edit"}/>
         </form>
            <button  onClick={() => setEditModal(false)} className='bg-blue-600 w-[100%] text-white font-bold rounded-md text-[25px] flex justify-center mx-auto inline-block'>Cancel</button>
