@@ -8,7 +8,7 @@ const Task = () => {
       <li className='bg-slate-400 w-[500px] rounded-lg h-[70px] p-3 flex justify-between items-center'>
          <strong className='text-[20px]'>Task</strong>
          <div className='flex gap-2'>
-            <button className='text-green-600 text-[25px]'><FontAwesomeIcon icon={faPenToSquare} /></button>
+            <button className='text-blue-600 text-[25px]'><FontAwesomeIcon icon={faPenToSquare} /></button>
             <button className='text-red-600 text-[25px]'><FontAwesomeIcon icon={faTrash} /></button>
          </div>
       </li>

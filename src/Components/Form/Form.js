@@ -5,6 +5,7 @@ import { faCalendarPlus } from '@fortawesome/free-solid-svg-icons'
 const Form = () => {
 
     const handleAddData = (e) => {
+        console.log(e.target.value)
          e.preventDefault()
          const data = {
             id:1,
