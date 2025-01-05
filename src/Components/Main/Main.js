@@ -15,7 +15,6 @@ const Main = () => {
       </div>
       <Task todos={todos} setTodos={setTodos}/>
     </div>
-  
     </>
   )
 }

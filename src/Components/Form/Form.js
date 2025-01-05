@@ -3,8 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCalendarPlus } from '@fortawesome/free-solid-svg-icons'
 
 const Form = ({todos,setTodos}) => {
-
-   const tasks = []
+  
     const handleOnSubmitTask = (e) => {
          e.preventDefault()
          const data = {
