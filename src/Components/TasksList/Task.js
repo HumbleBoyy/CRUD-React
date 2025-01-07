@@ -1,4 +1,4 @@
-import { faL, faPenToSquare, faTrash } from '@fortawesome/free-solid-svg-icons'
+import { faPenToSquare, faTrash } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useState } from 'react'
 import Modal from '../Modal/Modal'
@@ -73,8 +73,6 @@ const Task = ({ todos, setTodos }) => {
                 </form>
               </div>
             </Modal>
-
-
 
 {/* Delete Modal */}
             <Modal extraClass={deleteModal === false ? "scale-0" : "scale-1"}>
