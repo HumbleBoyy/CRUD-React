@@ -17,7 +17,7 @@ const Form = ({todos,setTodos}) => {
 
   return (
     <form onSubmit={handleOnSubmitTask} className='flex items-center justify-center mt-10 p-2'>
-      <input name='task' type="text" placeholder="Add things to do..." className='w-[100%] h-[50px] p-2 text-[20px] shadow-lg rounded-l-md outline-none'/>
+      <input required name='task' type="text" placeholder="Add things to do..." className='w-[100%] h-[50px] p-2 text-[20px] shadow-lg rounded-l-md outline-none'/>
       <Button type={"submit"} icon={<FontAwesomeIcon icon={faCalendarPlus} />}/>
     </form>
   )
