@@ -4,13 +4,13 @@ import { faCalendarPlus } from '@fortawesome/free-solid-svg-icons'
 
 const Form = ({todos,setTodos}) => {
   
+  // Subbmit form function
     const handleOnSubmitTask = (e) => {
          e.preventDefault()
          const data = {
             id:todos.length ? todos[todos.length -1].id + 1 : 1,
             title: e.target.task.value
          }
-
          setTodos([...todos, data])
          e.target.reset()
     }
